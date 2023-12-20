@@ -1,0 +1,122 @@
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gray-600);
+  width: 1728px;
+  height: 96px;
+}
+.groupItem {
+  width: 13.23%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 86.77%;
+}
+.about,
+.workProcess {
+  position: absolute;
+  top: calc(50% - 12px);
+}
+.about {
+  text-decoration: none;
+  width: 15.93%;
+  left: 0;
+  letter-spacing: -0.4px;
+  font-weight: 600;
+  color: var(--color-whitesmoke-100);
+  display: inline-block;
+  height: 24px;
+}
+.workProcess {
+  width: 12.59%;
+  left: 49.08%;
+}
+.services,
+.workProcess,
+.workProcess1 {
+  text-decoration: none;
+  letter-spacing: -0.4px;
+  font-weight: 600;
+  color: inherit;
+  display: inline-block;
+  height: 24px;
+}
+.workProcess1 {
+  position: absolute;
+  width: 17.23%;
+  top: calc(50% - 12px);
+  left: 23.89%;
+}
+.services {
+  width: 6.85%;
+  left: 69.64%;
+}
+.contacts,
+.menu,
+.services {
+  position: absolute;
+  top: calc(50% - 12px);
+}
+.contacts {
+  text-decoration: none;
+  width: 15.54%;
+  left: 84.46%;
+  letter-spacing: -0.4px;
+  font-weight: 600;
+  color: inherit;
+  display: inline-block;
+  height: 23.6px;
+}
+.menu {
+  width: 49.04%;
+  right: 0;
+  left: 50.96%;
+  height: 24px;
+}
+.logo3308b1b4999411a4297e11dc8Icon {
+  position: absolute;
+  top: -2px;
+  left: -26px;
+  width: 152px;
+  height: 70.8px;
+  object-fit: cover;
+}
+.maskGroup,
+.menuParent {
+  position: absolute;
+  left: 0;
+  height: 46px;
+}
+.maskGroup {
+  text-decoration: none;
+  top: 0;
+  width: 100px;
+}
+.menuParent {
+  width: 79.73%;
+  top: calc(50% - 22.9px);
+  right: 20.27%;
+}
+.groupParent {
+  position: absolute;
+  height: 51.88%;
+  width: 79.9%;
+  top: 23.96%;
+  right: 9.91%;
+  bottom: 24.17%;
+  left: 10.19%;
+}
+.rectangleParent {
+  position: absolute;
+  top: 291px;
+  left: 260px;
+  width: 1728px;
+  height: 96px;
+  text-align: left;
+  font-size: var(--label-02-size);
+  color: var(--color-gray-1100);
+  font-family: var(--label-01);
+}
