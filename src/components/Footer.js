@@ -1,64 +1,55 @@
-import ContainerWithLinks from "./ContainerWithLinks";
-import styles from "./Footer.module.css";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import Image from '../assets/images/Mask group.png';
 
 const Footer = () => {
   return (
-    <div className={styles.copyright2021Parent}>
-      <div className={styles.copyright2021}>Copyright 2022 © Web3makr</div>
-      <div className={styles.social}>
-        <ContainerWithLinks
-          dimensions="/vector@2x.png"
-          propLeft="46.4px"
-          propHeight="70.83%"
-          propWidth="87.08%"
-          propTop="16.67%"
-          propRight="6.67%"
-          propBottom="12.5%"
-          propLeft1="6.25%"
-        />
-        <ContainerWithLinks
-          dimensions="/vector@2x.png"
-          propLeft="0px"
-          propHeight="83.33%"
-          propWidth="83.33%"
-          propTop="8.33%"
-          propRight="8.33%"
-          propBottom="8.33%"
-          propLeft1="8.33%"
-        />
-        <ContainerWithLinks
-          dimensions="/vector@2x.png"
-          propLeft="92.9px"
-          propHeight="82.92%"
-          propWidth="83.33%"
-          propTop="8.33%"
-          propRight="8.33%"
-          propBottom="8.75%"
-          propLeft1="8.33%"
-        />
-      </div>
-      <div className={styles.groupParent}>
-        <img className={styles.groupChild} alt="" src="/group-114@2x.png" />
-        <div className={styles.menu}>
-          <a className={styles.about} href="#">
-            Web3Makr
-          </a>
-          <a className={styles.workProcess} href="#">
-            Services
-          </a>
-          <a className={styles.workProcess1} href="#">
-            White paper
-          </a>
-          <a className={styles.services} href="#">
-            Tool
-          </a>
-          <a className={styles.contacts} href="#">
-            Contact us
-          </a>
-        </div>
-      </div>
+    <div style={{ background: 'var(--bs-gradient)' }}>
+      <Container fluid style={{ background: 'linear-gradient(to right, var(--bs-dark), var(--bs-black))' }}>
+        <Row>
+          <Col md={12} className="text-center">
+            <img src={Image} alt='' className="img-fluid" />
+          </Col>
+          <Col md={12} sm={12} className="d-flex justify-content-center align-items-center mb-4" style={{ marginTop: "20px" }}>
+            <span style={{ color: 'white', marginRight: '30px', fontFamily: "Inter" }}>
+              <a href="#Web3Makr" style={{ color: 'white', textDecoration: 'none' }}>Web3Makr</a>
+            </span>
+            <span style={{ color: 'white', marginRight: '30px', fontFamily: "Inter" }}>
+              <a href="#WhitePaper" style={{ color: 'white', textDecoration: 'none' }}>White paper</a>
+            </span>
+            <span style={{ color: 'white', marginRight: '30px', fontFamily: "Inter" }}>
+              <a href="#Services" style={{ color: 'white', textDecoration: 'none' }}>Services</a>
+            </span>
+            <span style={{ color: 'white', marginRight: '30px', fontFamily: "Inter" }}>
+              <a href="#Tool" style={{ color: 'white', textDecoration: 'none' }}>Tool</a>
+            </span>
+            <span style={{ color: 'white', fontFamily: "Inter" }}>
+              <a href="#ContactUs" style={{ color: 'white', textDecoration: 'none' }}>Contact us</a>
+            </span>
+          </Col>
+          <Col md={6} sm={12}>
+            <p style={{ fontFamily: 'Inter', color: 'white' }}>
+              Copyright 2022 © Web3makr
+            </p>
+          </Col>
+          <Col md={6} sm={12} className="d-flex justify-content-end align-items-center">
+            <a href="#Instagram" style={{ color: 'white', marginRight: '10px' }}>
+              <FontAwesomeIcon icon={faInstagram} style={{ color: 'white', fontSize: '24px' }} />
+            </a>
+            <a href="#Facebook" style={{ color: 'white', marginRight: '10px' }}>
+              <FontAwesomeIcon icon={faFacebook} style={{ color: 'white', fontSize: '24px' }} />
+            </a>
+            <a href="#Twitter" style={{ color: 'white' }}>
+              <FontAwesomeIcon icon={faTwitter} style={{ color: 'white', fontSize: '24px' }} />
+            </a>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
-};
+}
+
 
 export default Footer;
